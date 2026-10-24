@@ -1,4 +1,4 @@
-# MochiTa Desktop · Anime Frost
+# Anime Frost Desktop
 
 CachyOS / Hyprland 桌面配置快照，整理于 2026-10-24。
 
@@ -15,9 +15,9 @@ Python 组件使用 python-gobject、python-cairo、gtk-layer-shell、GTK 3；�
 
 这是配置快照，请先备份现有配置，再按目录选择复制到自己的主目录，不建议直接覆盖整个 .config。
 
-1. 将配置和脚本中的 /home/mochita 替换为自己的实际主目录，包括 Lua、Python、JSON 和 Shell 文件。保留原路径便于准确记录当前配置。
-2. 根据自己的硬件修改 .config/hypr/hyprland.lua 的 DP-1、2560x1440@180 和缩放设置。
-3. 根据需要修改 Waybar 的 Australia/Sydney 时区、桌面 logo 和文字。
+1. 解压 desktop-dotfiles.tar.gz，在解压目录运行 python3 prepare.py，将 /home/USER 替换为你自己的主目录。此命令只处理解压目录，不安装或覆盖现有桌面配置。
+2. 显示器使用自动选择和 preferred 模式，可按自己的硬件调整。
+3. 时钟使用系统本地时区，桌面标识使用通用 FROST 字样。
 4. 将需要的 .config 子目录、.local/bin 脚本及 .local/share 主题复制到相应位置。脚本需要可执行权限。
 5. 壁纸在 Pictures/tamako2-enhanced.png；Fastfetch 图片在 .config/fastfetch 内。
 6. 注销并在兼容的 Hyprland 会话中登录。启动入口为 .local/bin/mochi-desktop-start。
@@ -47,3 +47,8 @@ Python 组件使用 python-gobject、python-cairo、gtk-layer-shell、GTK 3；�
 SHA256SUMS 记录分享文件校验值。
 
 壁纸、插图和第三方主题资源的权利归原作者所有；本仓库未为这些资源追加许可。
+
+## 通用分享版
+
+已移除手写 CPU 型号、固定用户名及主机显示名称、个人日期、原机显示器参数和固定时区。Fastfetch 自动读取运行者的用户名、主机名及 CPU；这些实际信息未写入包中。桌面外观与功能代码予以保留。
+仅修改分享副本，不修改原机正在使用的配置。
