@@ -1,4 +1,4 @@
-# Mochi Desktop · Anime Frost
+# MochiTa Desktop · Anime Frost
 
 CachyOS / Hyprland 桌面配置快照，整理于 2026-10-24。
 
